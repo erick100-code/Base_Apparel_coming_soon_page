@@ -1,2 +1,13 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --Desaturated_Red: #f8bfbf;
+    --Soft_Red: #f96262;
+    --Dark_Grayish_Red: #413a3a;
+    font-family: "Josefin Sans", sans-serif;
+    --teste:#f8bfbf; 
+    --teste1:#ee8c8c;
+}
+

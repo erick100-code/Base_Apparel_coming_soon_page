@@ -6,21 +6,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
   <link href="./input.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
 </head>
-<body>
-  <main>
-    <section>
-      <div id="login">
-        <img src="images/logo.svg" alt="logo" id="logo">
-        <img src="images/hero-mobile.jpg" alt="hero" id="hero">
-        <h1>We're coming soon</h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-        <input type="email" name="em" id="em" placeholder="Email Address">
+<body class="bg-white min-h-dvh w-screen font-['Josefin_Sans']">
+  <main class="bg-white min-h-dvh w-screen flex justify-center items-center">
+    <section class="bg-white min-h-dvh pb-[30px]">
+      <div id="login" class="text-center min-h-dvh flex flex-col justify-evenly">
+        <img src="images/logo.svg" alt="logo" id="logo" class="w-[180px] p-[50px_0px]">
+        <div id="image" class="bg-black m-[0px_-36px] mb-[50px]">
+          <img src="images/hero-mobile.jpg" alt="hero" id="hero" class="w-[100%]">
+        </div>
+        <div id="titulo" class="mb-[30px]">
+          <h1 class="text-[3em] m-auto text-[#413a3a] leading-[70px] font-bold uppercase w-[300px] tracking-[15px]"><strong class="font-light uppercase text-[#ce9797]">We're</strong> coming soon</h1>
+        </div>
+        <div id="paragrafo" class="text-center w-[100%]">
+          <p class="text-[#ce9797] text-[20px] w-[360px] m-auto">
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+        </div><!--absolute left-[280px] bg-[#ff4747] p-[35px] rounded-[48%] top-[50px] hover:bg-[#f8bfbf] hover:cursor-pointer-->
+        <div class="relative">
+          <div id="divseta" class="absolute bg-linear-[to_right,_#f8bfbf_60%,_#ee8c8c] rounded-[60px] left-[280px] top-[50px] h-[70px] w-[90px] flex justify-center items-center">
+            <i class="fa-solid fa-angle-right fa-xl" style="color: #ffffff;" id="icoseta"></i>
+          </div>
+          <i class="fa-solid fa-circle-exclamation fa-2xl absolute left-[230px] top-[85px] opacity-0" style="color: #ff4747;" id="alert"></i>
+          <input type="email" name="em" id="em" placeholder="Email Address" class="m-[50px_0px_0px_0px] rounded-[100px] placeholder:text-[#ce9797] border-[1px] border-black w-[100%] text-[20px] h-[70px] p-[15px] pl-[30px]">
+          <p class="text-left pl-[30px] pt-[10px] text-red-300 hidden" id="pescondido">please provide a valid email</p>
+        </div>
       </div>
 
       <div id="img">
@@ -28,5 +41,6 @@
       </div>
     </section>
   </main>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

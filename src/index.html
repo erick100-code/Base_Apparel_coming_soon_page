@@ -27,11 +27,13 @@
           </p>
         </div><!--absolute left-[280px] bg-[#ff4747] p-[35px] rounded-[48%] top-[50px] hover:bg-[#f8bfbf] hover:cursor-pointer-->
         <div class="relative">
-          <div id="divseta" class="absolute bg-linear-[to_right,_#f8bfbf_60%,_#ee8c8c] rounded-[60px] left-[280px] top-[50px] h-[70px] w-[90px] flex justify-center items-center">
-            <i class="fa-solid fa-angle-right fa-xl" style="color: #ffffff;" id="icoseta"></i>
-          </div>
           <i class="fa-solid fa-circle-exclamation fa-2xl absolute left-[230px] top-[85px] opacity-0" style="color: #ff4747;" id="alert"></i>
-          <input type="email" name="em" id="em" placeholder="Email Address" class="m-[50px_0px_0px_0px] rounded-[100px] placeholder:text-[#ce9797] border-[1px] border-black w-[100%] text-[20px] h-[70px] p-[15px] pl-[30px]">
+          <form action="#" method="post">
+            <input type="email" name="em" id="email" placeholder="Email Address" class="m-[50px_0px_0px_0px] rounded-[100px] placeholder:text-[#ce9797] border-[1px] border-black w-[100%] text-[20px] h-[70px] p-[15px] pl-[30px]" required>
+            <button type="submit" class="absolute bg-linear-[to_right,_#f8bfbf_60%,_#ee8c8c] rounded-[60px] left-[280px] top-[50px] h-[70px] w-[90px] flex justify-center items-center" id="bot">
+              <i class="fa-solid fa-angle-right fa-xl" style="color: #ffffff;" id="icoseta"></i>
+            </button>
+          </form>
           <p class="text-left pl-[30px] pt-[10px] text-red-300 hidden" id="pescondido">please provide a valid email</p>
         </div>
       </div>

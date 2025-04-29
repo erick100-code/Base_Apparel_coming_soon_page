@@ -234,14 +234,8 @@
   .w-screen {
     width: 100vw;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -264,10 +258,6 @@
   .rounded-\[100px\] {
     border-radius: 100px;
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -284,89 +274,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-linear-\[to\] {
-    --tw-gradient-position: to;
-    background-image: linear-gradient(var(--tw-gradient-stops,to));
-  }
-  .bg-linear-\[to_\] {
-    --tw-gradient-position: to ;
-    background-image: linear-gradient(var(--tw-gradient-stops,to ));
-  }
-  .bg-linear-\[to_right\,\] {
-    --tw-gradient-position: to right,;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right,));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf\%\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf%, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf%, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf\,_\] {
-    --tw-gradient-position: to right, #f8bfbf, ;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf, ));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf\,_blue\] {
-    --tw-gradient-position: to right, #f8bfbf, blue;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf, blue));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf50\%\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf50%, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf50%, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf50\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf50, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf50, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf_\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf , #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf , #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf_5\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf 5, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 5, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf_40\%\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf 40%, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 40%, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf_50\%\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf 50%, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 50%, #ee8c8c));
-  }
   .bg-linear-\[to_right\,_\#f8bfbf_60\%\,_\#ee8c8c\] {
     --tw-gradient-position: to right, #f8bfbf 60%, #ee8c8c;
     background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 60%, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\#f8bfbf_80\%\,_\#ee8c8c\] {
-    --tw-gradient-position: to right, #f8bfbf 80%, #ee8c8c;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 80%, #ee8c8c));
-  }
-  .bg-linear-\[to_right\,_\,_blue\] {
-    --tw-gradient-position: to right, , blue;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, , blue));
-  }
-  .bg-linear-\[to_right\,_\] {
-    --tw-gradient-position: to right, ;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, ));
-  }
-  .bg-linear-\[to_right\,_red\,_blue\] {
-    --tw-gradient-position: to right, red, blue;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, red, blue));
-  }
-  .bg-linear-\[to_right\,_red_blue\] {
-    --tw-gradient-position: to right, red blue;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right, red blue));
-  }
-  .bg-linear-\[to_right\] {
-    --tw-gradient-position: to right;
-    background-image: linear-gradient(var(--tw-gradient-stops,to right));
-  }
-  .bg-linear-\[to_rigth\] {
-    --tw-gradient-position: to rigth;
-    background-image: linear-gradient(var(--tw-gradient-stops,to rigth));
   }
   .p-\[15px\] {
     padding: 15px;
@@ -428,9 +338,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;

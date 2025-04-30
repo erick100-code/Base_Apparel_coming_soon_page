@@ -162,6 +162,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -287,6 +290,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-linear-\[to_right\,_\#f8bfbf\,_\#ee8c8c\] {
+    --tw-gradient-position: to right, #f8bfbf, #ee8c8c;
+    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf, #ee8c8c));
+  }
+  .bg-linear-\[to_right\,_\#f8bfbf_\,_\#ee8c8c\] {
+    --tw-gradient-position: to right, #f8bfbf , #ee8c8c;
+    background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf , #ee8c8c));
+  }
   .bg-linear-\[to_right\,_\#f8bfbf_60\%\,_\#ee8c8c\] {
     --tw-gradient-position: to right, #f8bfbf 60%, #ee8c8c;
     background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf 60%, #ee8c8c));
@@ -358,6 +369,12 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-1 {
+    opacity: 1%;
+  }
+  .opacity-5 {
+    opacity: 5%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -369,15 +386,108 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
   .placeholder\:text-\[\#ce9797\] {
     &::placeholder {
       color: #ce9797;
+    }
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
     }
   }
   .hover\:bg-\[\#f8bfbf\] {
     &:hover {
       @media (hover: hover) {
         background-color: #f8bfbf;
+      }
+    }
+  }
+  .hover\:bg-\[black\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: black;
+      }
+    }
+  }
+  .hover\:bg-linear-0 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: 0deg;
+        @supports (background-image: linear-gradient(in lab, red, red)) {
+          --tw-gradient-position: 0deg in oklab;
+        }
+        background-image: linear-gradient(var(--tw-gradient-stops));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to ;
+        background-image: linear-gradient(var(--tw-gradient-stops,to ));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\,_\#\#f8bfbf\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right, ##f8bfbf;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right, ##f8bfbf));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\,_\#\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right, #;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right, #));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\,_\#f8bfbf\,_\#f8bfbf\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right, #f8bfbf, #f8bfbf;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf, #f8bfbf));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\,_\#f8bfbf\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right, #f8bfbf;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right, #f8bfbf));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\,_\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right, ;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right, ));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right));
+      }
+    }
+  }
+  .hover\:bg-linear-\[to_right_\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right ;
+        background-image: linear-gradient(var(--tw-gradient-stops,to right ));
       }
     }
   }

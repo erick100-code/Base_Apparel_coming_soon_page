@@ -11,6 +11,8 @@ bot.addEventListener('click', () => {//chama função anonima ao clicar
         ialert.style.opacity = '1'
         pes.style.opacity = '100%' // deixa o texto visivel
         pes.style.userSelect = 'text' //permite selecionar o texto
+        email.style.borderColor = 'red'
+        email.style.borderWidth = '2px'
     }
     
 })
@@ -19,6 +21,8 @@ email.addEventListener('focus', () => {//chama função anonima ao ficar com foc
     bot.style.opacity = '0'//torna o icone invisivel ao ficar com foco o input
     bot.style.display = 'none'
     ialert.style.opacity = '0'
+    email.style.borderColor = '#00000033'
+    email.style.borderWidth = '1px'
 })
 
 email.addEventListener('blur', () => {

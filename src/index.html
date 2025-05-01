@@ -10,28 +10,28 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body class="bg-white min-h-dvh w-screen font-['Josefin_Sans'] min-lg:h-[100vh]">
-  <main class="bg-white min-h-dvh w-screen flex justify-center items-center min-lg:h-[100vh]">
-    <section class="bg-white lg:bg-amber-400 min-h-dvh pb-[30px] lg:pb-[0px] lg:w-[100vw] lg:min-h-[100vh] lg:flex">
-      <div id="login" class="text-center min-h-dvh flex flex-col justify-evenly lg:h-[100%] lg:w-[60%] lg:items-left lg:text-left lg:p-[100px] lg:pb-[0px] lg:justify-between lg:pt-[0px] lg:bg-red-600">
+  <main class="bg-white min-h-dvh w-screen flex justify-center items-center min-lg:h-[100vh] lg:overflow-x-hidden lg:overflow-y-hidden">
+    <section class="bg-white min-h-dvh pb-[30px] lg:pb-[0px] lg:w-[100vw] lg:min-h-[100vh] lg:flex">
+      <div id="login" class="text-center min-h-dvh flex flex-col justify-evenly lg:h-[100%] lg:w-[60%] lg:items-left lg:text-left lg:p-[100px] lg:pb-[50px] lg:justify-between lg:pt-[0px]">
        
-        <img src="images/logo.svg" alt="logo" id="logo" class="w-[180px] p-[50px_0px]">
+        <img src="images/logo.svg" alt="logo" id="logo" class="w-[180px] p-[50px_0px] lg:mb-[50px] lg:mt-[20px]">
         <div id="image" class="bg-black m-[0px_-36px] mb-[50px] lg:hidden">
           <img src="images/hero-mobile.jpg" alt="hero" id="hero" class="w-[100%] lg:w-[30%]">
         </div>
-        <div id="titulo" class="mb-[30px] lg:bg-black">
+        <div id="titulo" class="mb-[30px]">
           <h1 class="text-[3em] lg:text-[4em] m-auto text-[#413a3a] leading-[70px] font-bold uppercase w-[300px] tracking-[15px] lg:w-[0px] lg:m-[0px]"><strong class="font-light uppercase text-[#ce9797]">We're</strong> coming soon</h1>
         </div>
-        <div id="paragrafo" class="text-center w-[100%] lg:bg-black lg:w-auto">
+        <div id="paragrafo" class="text-center w-[100%] lg:w-auto">
           <p class="text-[#ce9797] text-[20px] w-[360px] m-auto lg:text-left lg:w-[450px] lg:m-[0px]">
             Hello fellow shoppers! We're currently building our new fashion store.
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
         </div>
         <div class="relative">
-          <i class="fa-solid fa-circle-exclamation fa-2xl absolute left-[230px] top-[85px] opacity-0 block" style="color: #ff4747;" id="alert"></i>
+          <i class="fa-solid fa-circle-exclamation fa-2xl absolute left-[230px] top-[85px] opacity-0 block lg:left-[280px]" style="color: #ff4747;" id="alert"></i>
           <form action="#" method="post">
-            <input type="email" name="em" id="email" placeholder="Email Address" class="m-[50px_0px_0px_0px] rounded-[100px] placeholder:text-[#ce9797] border-[1px] border-black w-[100%] text-[20px] h-[70px] p-[15px] pl-[30px]" required>
-            <button type="submit" class="absolute bg-linear-[to_right,_#f8bfbf,_#ee8c8c] rounded-[60px] left-[280px] top-[50px] h-[70px] w-[90px] flex justify-center items-center hover:bg-linear-[to_right,_#f8bfbf,_#f8bfbf] hover:cursor-pointer" id="bot">
+            <input type="email" name="em" id="email" placeholder="Email Address" class="m-[50px_0px_0px_0px] rounded-[100px] placeholder:text-[#ce9797] border-[1px] border-[#00000033] w-[100%] text-[20px] h-[70px] p-[15px] pl-[30px] lg:w-[450px]" required>
+            <button type="submit" class="absolute bg-linear-[to_right,_#f8bfbf,_#ee8c8c] rounded-[60px] left-[280px] top-[50px] h-[70px] w-[90px] flex justify-center items-center hover:bg-linear-[to_right,_#f8bfbf,_#f8bfbf] hover:cursor-pointer lg:w-[110px] lg:left-[345px] lg:h-[70px]" id="bot">
               <i class="fa-solid fa-angle-right fa-xl" style="color: #ffffff;" id="icoseta"></i>
             </button>
           </form>
@@ -39,8 +39,7 @@
         </div>
       </div>
 
-      <div id="img" class="lg:w-[40%] lg:min-h-[100%] hidden lg:block bg-fuchsia-800 bg-[url(images/hero-desktop.jpg)]">
-    
+      <div id="img" class="lg:w-[40%] lg:min-h-[100%] hidden lg:block bg-fuchsia-800 bg-[url(images/hero-desktop.jpg)] lg:bg-no-repeat bg-cover">  
       </div>
     </section>
   </main>

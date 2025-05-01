@@ -9,23 +9,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
-<body class="bg-white min-h-dvh w-screen font-['Josefin_Sans']">
-  <main class="bg-white min-h-dvh w-screen flex justify-center items-center">
-    <section class="bg-white min-h-dvh pb-[30px]">
-      <div id="login" class="text-center min-h-dvh flex flex-col justify-evenly">
+<body class="bg-white min-h-dvh w-screen font-['Josefin_Sans'] min-lg:h-[100vh]">
+  <main class="bg-white min-h-dvh w-screen flex justify-center items-center min-lg:h-[100vh]">
+    <section class="bg-white lg:bg-amber-400 min-h-dvh pb-[30px] lg:pb-[0px] lg:w-[100vw] lg:min-h-[100vh] lg:flex">
+      <div id="login" class="text-center min-h-dvh flex flex-col justify-evenly lg:h-[100%] lg:w-[60%] lg:items-left lg:text-left lg:p-[100px] lg:pb-[0px] lg:justify-between lg:pt-[0px] lg:bg-red-600">
+       
         <img src="images/logo.svg" alt="logo" id="logo" class="w-[180px] p-[50px_0px]">
-        <div id="image" class="bg-black m-[0px_-36px] mb-[50px]">
-          <img src="images/hero-mobile.jpg" alt="hero" id="hero" class="w-[100%]">
+        <div id="image" class="bg-black m-[0px_-36px] mb-[50px] lg:hidden">
+          <img src="images/hero-mobile.jpg" alt="hero" id="hero" class="w-[100%] lg:w-[30%]">
         </div>
-        <div id="titulo" class="mb-[30px]">
-          <h1 class="text-[3em] m-auto text-[#413a3a] leading-[70px] font-bold uppercase w-[300px] tracking-[15px]"><strong class="font-light uppercase text-[#ce9797]">We're</strong> coming soon</h1>
+        <div id="titulo" class="mb-[30px] lg:bg-black">
+          <h1 class="text-[3em] lg:text-[4em] m-auto text-[#413a3a] leading-[70px] font-bold uppercase w-[300px] tracking-[15px] lg:w-[0px] lg:m-[0px]"><strong class="font-light uppercase text-[#ce9797]">We're</strong> coming soon</h1>
         </div>
-        <div id="paragrafo" class="text-center w-[100%]">
-          <p class="text-[#ce9797] text-[20px] w-[360px] m-auto">
+        <div id="paragrafo" class="text-center w-[100%] lg:bg-black lg:w-auto">
+          <p class="text-[#ce9797] text-[20px] w-[360px] m-auto lg:text-left lg:w-[450px] lg:m-[0px]">
             Hello fellow shoppers! We're currently building our new fashion store.
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
-        </div><!--absolute left-[280px] bg-[#ff4747] p-[35px] rounded-[48%] top-[50px] hover:bg-[#f8bfbf] hover:cursor-pointer-->
+        </div>
         <div class="relative">
           <i class="fa-solid fa-circle-exclamation fa-2xl absolute left-[230px] top-[85px] opacity-0 block" style="color: #ff4747;" id="alert"></i>
           <form action="#" method="post">
@@ -38,8 +39,8 @@
         </div>
       </div>
 
-      <div id="img">
-
+      <div id="img" class="lg:w-[40%] lg:min-h-[100%] hidden lg:block bg-fuchsia-800 bg-[url(images/hero-desktop.jpg)]">
+    
       </div>
     </section>
   </main>

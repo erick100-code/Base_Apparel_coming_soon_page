@@ -433,6 +433,16 @@
       left: 280px;
     }
   }
+  .lg\:left-\[284px\] {
+    @media (width >= 64rem) {
+      left: 284px;
+    }
+  }
+  .lg\:left-\[287px\] {
+    @media (width >= 64rem) {
+      left: 287px;
+    }
+  }
   .lg\:left-\[300px\] {
     @media (width >= 64rem) {
       left: 300px;
